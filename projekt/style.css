@@ -349,6 +349,40 @@ button[type="submit"]:hover {
     margin: 0 auto;
 }
 
+/* Auth Forms */
+.auth-container {
+    max-width: 500px;
+    margin: 2rem auto;
+}
+
+.auth-form {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.auth-form h2 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.error-message {
+    background: #ffebee;
+    color: #c62828;
+    padding: 0.75rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.success-message {
+    background: #e8f5e9;
+    color: #2e7d32;
+    padding: 0.75rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
 /* Media Queries */
 @media screen and (max-width: 768px) {
     ul {
@@ -396,7 +430,7 @@ button[type="submit"]:hover {
     .map-container iframe {
         height: 300px;
     }
-    
+
     .video-container {
         margin: 1rem 0;
     }
