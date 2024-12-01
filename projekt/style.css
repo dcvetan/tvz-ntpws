@@ -185,3 +185,77 @@ footer .social-links img {
 footer .social-links img:hover {
     transform: scale(1.1);
 }
+
+/* News Page Styles */
+main {
+    padding: 2rem;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+main article {
+    background-color: #fff;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row; /* Display content horizontally */
+    align-items: center;
+    text-align: left;
+    width: 100%; /* Make articles full width */
+    max-width: 800px; /* Optional: limit the max width */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main article img {
+    width: 150px; /* Set a fixed width */
+    height: 100px; /* Set a fixed height */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    border-radius: 8px;
+    margin-right: 1rem; /* Add space between image and text */
+}
+
+main article div {
+    flex: 1; /* Allow the text content to take up remaining space */
+}
+
+main article h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+main article p {
+    margin-bottom: 0.5rem;
+}
+
+main article a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+main article a:hover {
+    text-decoration: underline;
+}
+main article .published-date {
+    font-size: 0.875rem; /* Smaller font size */
+    color: #777; /* Gray color */
+    margin-top: 0.5rem; /* Space above the date */
+}
+
+@media screen and (max-width: 768px) {
+    main article {
+        flex-direction: column; /* Stack content vertically on smaller screens */
+        align-items: center;
+    }
+
+    main article img {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    main article div {
+        text-align: center;
+    }
+}
