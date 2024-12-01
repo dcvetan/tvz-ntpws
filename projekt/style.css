@@ -149,3 +149,39 @@ main figure figcaption {
         padding: 1rem;
     }
 }
+
+/* Footer */
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+footer .social-links {
+    margin-top: 0.5rem;
+}
+
+footer .social-links a {
+    margin: 0 0.5rem;
+    display: inline-block;
+}
+
+footer .social-links img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+footer .social-links img:hover {
+    transform: scale(1.1);
+}
