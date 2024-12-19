@@ -17,6 +17,7 @@ if (!isset($_SESSION['user_id'])) {
                 <li><a href="index.php?menu=register">Register</a></li>';
 } else {
     print '
+                <li><a href="index.php?menu=cms">CMS</a></li>
                 <li><a href="index.php?menu=logout">Logout</a></li>';
 }
 

@@ -9,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         exit();
     }
 
-    $query = "SELECT id, username, password, firstname FROM users WHERE username = ?";
+    $query = "SELECT id, username, password, firstname, role FROM users WHERE username = ?";
     $stmt = mysqli_prepare($db, $query);
     mysqli_stmt_bind_param($stmt, "s", $username);
     mysqli_stmt_execute($stmt);
@@ -20,6 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $_SESSION['user_id'] = $user['id'];
             $_SESSION['username'] = $user['username'];
             $_SESSION['firstname'] = $user['firstname'];
+            $_SESSION['role'] = $user['role'];
             $_SESSION['success'] = "Welcome back, " . $user['firstname'] . "!";
             
             header('Location: index.php?menu=home');
